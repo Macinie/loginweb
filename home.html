@@ -20,13 +20,13 @@
   <button type="submit" onclick="logout()"> Logout</button>
   <div class="div1">
     <h1> Temperature Converter </h1>
-    <input type="nummber" id="cel">
+    <input type="number" id="cel">
     <button type= "submit" onclick="adding()"> Convert </button>
     <p id="demo1">(answer)</p>
     
     <script>
       function adding (){
-      let c = parseInt(document.GetElementById("cel").value;
+      let c = parseInt(document.GetElementById("cel").value);
       let x = c * (9/5) +32;
       document.getElementById("demo1").innerHTML= x;
       }
