@@ -23,7 +23,7 @@
     <h3> Celsius to Fahrenheit </h3>
     <input type="number" id="cel">
     <button type= "button" onclick="adding()"> Convert </button>
-    <p> Fahrenheit </p> <p id="demo1">-</p>
+    <p> Fahrenheit: </p> <p id="demo1">-</p>
     
     <script>
       function adding() {
@@ -37,12 +37,12 @@
     <h3> Fahrenheit to Celsius  </h3>
     <input type="number" id="fah">
     <button type= "button" onclick="convert()"> Convert </button>
-    <p> Celsius </p> <p id="demo2">-</p>
+    <p> Celsius: </p> <p id="demo2">-</p>
     
     <script>
       function convert() {
       let f = parseInt(document.getElementById("fah").value);
-      let x = (f - 32) * 5/9 ;
+      let x = f * (5/9) - 32;
       document.getElementById("demo2").innerHTML= x;
       }
     </script>
